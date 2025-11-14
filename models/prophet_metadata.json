@@ -1,0 +1,29 @@
+{
+  "model": "Prophet",
+  "timestamp": "2025-11-14T14:38:18.330773",
+  "test_metrics": {
+    "model": "Prophet",
+    "MAE": 1936964.6476469056,
+    "RMSE": 2373749.4530137563,
+    "R2": -0.32660706864055733,
+    "MAPE": 39.08307066432708
+  },
+  "cv_metrics": {},
+  "parameters": {
+    "seasonality_mode": "multiplicative",
+    "changepoint_prior_scale": 0.05,
+    "yearly_seasonality": true,
+    "weekly_seasonality": true,
+    "monthly_seasonality": true
+  },
+  "regressors": [
+    "rainfall_mm",
+    "temperature",
+    "discount_percent",
+    "customer_traffic",
+    "festival_season"
+  ],
+  "train_size": 292,
+  "test_size": 73,
+  "forecast_days": 90
+}
