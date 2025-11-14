@@ -487,3 +487,4 @@ If you are asked to plot a chart, use "matplotlib" for charts, save as png.
 
 Generate python code and return full updated code:
 2025-11-14 13:55:20 [INFO] Executing Step 3: CodeGenerator
+2025-11-14 13:55:21 [ERROR] Pipeline failed on step 3: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
