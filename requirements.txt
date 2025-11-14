@@ -1,0 +1,27 @@
+# Core
+pandas
+numpy
+python-dateutil
+
+# Visualization
+matplotlib
+seaborn
+plotly
+
+# Machine Learning / Data Mining
+scikit-learn
+mlxtend        # for apriori algorithm
+
+# Time-series Forecasting
+prophet
+
+# Notebook environment
+jupyter
+ipykernel
+
+# Dashboard
+streamlit
+
+# Utilities
+tqdm
+pyyaml
