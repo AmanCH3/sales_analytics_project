@@ -1,8 +1,8 @@
 # Core
-pandas
+pandas>=2.0.0
 numpy
 python-dateutil
-
+networkx
 # Visualization
 matplotlib
 seaborn
@@ -14,6 +14,8 @@ mlxtend        # for apriori algorithm
 
 # Time-series Forecasting
 prophet
+xgboost
+lightgbm
 
 # Notebook environment
 jupyter
@@ -25,3 +27,8 @@ streamlit
 # Utilities
 tqdm
 pyyaml
+
+
+#Ai
+google-generativeai
+pandasai
