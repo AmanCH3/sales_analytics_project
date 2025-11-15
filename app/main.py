@@ -31,9 +31,10 @@ ENSEMBLE_METADATA = Path("models/ensemble_metadata.json")
 
 MODEL_COMPARISON = Path("data/processed/model_comparison.csv")
 
-# Product recommendation paths
-RECOMMENDATION_CSV = Path("data/processed/product_recommendations.csv")
-PLACEMENT_CSV = Path("data/processed/placement_suggestions.csv")
+# Product recommendation paths - UPDATED
+RECOMMENDATION_CSV = Path("data/processed/product_category_recommendations.csv")
+PLACEMENT_CSV = Path("data/processed/rack_aisle_suggestions.csv")
+CATEGORY_SUMMARY_CSV = Path("data/processed/category_summary.csv")
 
 FORECAST_DAYS = 90
 
@@ -47,7 +48,7 @@ st.set_page_config(
 )
 
 # ---------------------------------------------
-# Cached Loaders
+# Cached Loaders with Debugging
 # ---------------------------------------------
 @st.cache_data
 def load_data():
@@ -56,22 +57,84 @@ def load_data():
 @st.cache_data
 def load_rules():
     if RULES_CSV.exists():
-        return pd.read_csv(RULES_CSV)
+        df = pd.read_csv(RULES_CSV)
+        st.sidebar.success(f"✅ Loaded {len(df)} association rules")
+        return df
     if RULES_PATH.exists():
-        return joblib.load(RULES_PATH)
+        df = joblib.load(RULES_PATH)
+        st.sidebar.success(f"✅ Loaded {len(df)} association rules")
+        return df
+    st.sidebar.error("❌ No association rules found")
     return None
 
 @st.cache_data
 def load_product_recommendations():
+    """Load product-level recommendations with category info"""
     if RECOMMENDATION_CSV.exists():
-        return pd.read_csv(RECOMMENDATION_CSV)
+        df = pd.read_csv(RECOMMENDATION_CSV)
+        st.sidebar.success(f"✅ Loaded {len(df)} product recommendations")
+        # Debug: Show columns
+        print(f"Product Reco Columns: {df.columns.tolist()}")
+        return df
+    st.sidebar.error(f"❌ File not found: {RECOMMENDATION_CSV}")
     return pd.DataFrame()
 
 @st.cache_data
 def load_placement_suggestions():
+    """Load placement suggestions"""
     if PLACEMENT_CSV.exists():
-        return pd.read_csv(PLACEMENT_CSV)
+        df = pd.read_csv(PLACEMENT_CSV)
+        st.sidebar.success(f"✅ Loaded {len(df)} placement suggestions")
+        return df
+    st.sidebar.error(f"❌ File not found: {PLACEMENT_CSV}")
     return pd.DataFrame()
+
+@st.cache_data
+def load_category_summary():
+    """Load category-to-category summary"""
+    if CATEGORY_SUMMARY_CSV.exists():
+        df = pd.read_csv(CATEGORY_SUMMARY_CSV)
+        st.sidebar.success(f"✅ Loaded {len(df)} category pairs")
+        # Debug: Show columns and sample data
+        print(f"Category Summary Columns: {df.columns.tolist()}")
+        if len(df) > 0:
+            print(f"Lift range: {df['avg_lift'].min():.3f} to {df['avg_lift'].max():.3f}")
+            print(f"Sample data:\n{df.head(3)}")
+        return df
+    st.sidebar.error(f"❌ File not found: {CATEGORY_SUMMARY_CSV}")
+    return pd.DataFrame()
+
+@st.cache_data
+def build_hierarchical_data(product_reco_df):
+    """Build hierarchical dict: category_pair -> product recommendations"""
+    if len(product_reco_df) == 0:
+        return {}
+    
+    # Check if required columns exist
+    required_cols = ['product', 'recommended_product', 'product_category', 'recommended_category', 'lift', 'confidence', 'support']
+    missing_cols = [col for col in required_cols if col not in product_reco_df.columns]
+    
+    if missing_cols:
+        print(f"⚠️ Missing columns in product recommendations: {missing_cols}")
+        print(f"Available columns: {product_reco_df.columns.tolist()}")
+        return {}
+    
+    hierarchical = {}
+    
+    # Group by category pairs
+    for (cat_from, cat_to), group in product_reco_df.groupby(['product_category', 'recommended_category']):
+        key = f"{cat_from} → {cat_to}"
+        hierarchical[key] = group.sort_values('lift', ascending=False).rename(columns={
+            'product': 'product_from',
+            'recommended_product': 'product_to',
+            'product_category': 'category_from',
+            'recommended_category': 'category_to'
+        })
+    
+    print(f"✅ Created {len(hierarchical)} category pairs in hierarchical data")
+    st.sidebar.info(f"📊 {len(hierarchical)} category pairs available")
+    
+    return hierarchical
 
 @st.cache_data
 def load_forecast(model_type="Prophet"):
@@ -111,14 +174,22 @@ def load_comparison():
 # ---------------------------------------------
 def main():
     df = load_data()
-    rules = load_rules()
-
-    # NEW: Load product recommendation datasets
-    reco_df = load_product_recommendations()
-    placement_df = load_placement_suggestions()
-
+    
     # Sidebar
     st.sidebar.title("Dashboard Filters")
+    st.sidebar.markdown("---")
+    st.sidebar.subheader("📦 Data Status")
+    
+    # Load all data with status indicators
+    rules = load_rules()
+    reco_df = load_product_recommendations()
+    placement_df = load_placement_suggestions()
+    category_summary = load_category_summary()
+    
+    # Build hierarchical structure
+    hierarchical_data = build_hierarchical_data(reco_df)
+    
+    st.sidebar.markdown("---")
 
     product_list = ["All Products"] + sorted(df["category"].unique().tolist())
     selected_product = st.sidebar.selectbox("Select Product:", product_list)
@@ -126,7 +197,6 @@ def main():
     st.sidebar.markdown("---")
 
     api_key = st.sidebar.text_input("Enter Google AI API Key:", type="password")
-    st.sidebar.markdown("---")
 
     # Filter data
     df_filtered = df if selected_product == "All Products" else df[df["category"] == selected_product]
@@ -160,10 +230,19 @@ def main():
     with tab2:
         render_comparison_tab(load_comparison, load_metadata)
 
-    # TAB 3
+    # TAB 3 - FIXED: Pass all required parameters
     with tab3:
-        # FIXED: pass rules + reco_df + placement_df
-        render_product_tab(rules, reco_df, placement_df)
+        # Debug info at top
+        if len(category_summary) > 0:
+            st.info(f"📊 Loaded: {len(category_summary)} category pairs, {len(reco_df)} product recommendations, {len(placement_df)} placements")
+        
+        render_product_tab(
+            rules_df=rules,
+            reco_df=reco_df,
+            placement_df=placement_df,
+            category_recs=category_summary,
+            hierarchical_data=hierarchical_data
+        )
 
     # TAB 4
     with tab4:
