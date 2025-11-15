@@ -1,14 +1,18 @@
 {
   "model": "Prophet",
-  "timestamp": "2025-11-14T14:38:18.330773",
+  "timestamp": "2025-11-14T16:10:34.502660",
   "test_metrics": {
     "model": "Prophet",
-    "MAE": 1936964.6476469056,
-    "RMSE": 2373749.4530137563,
-    "R2": -0.32660706864055733,
-    "MAPE": 39.08307066432708
+    "MAE": 1486749.1090950784,
+    "RMSE": 1863667.096610961,
+    "R2": 0.2170950473540727,
+    "MAPE": 27.525161792883345
   },
-  "cv_metrics": {},
+  "cv_metrics": {
+    "cv_mae_mean": 1733319.134551505,
+    "cv_rmse_mean": 2130510.936995476,
+    "cv_mape_mean": 0.3196372827621008
+  },
   "parameters": {
     "seasonality_mode": "multiplicative",
     "changepoint_prior_scale": 0.05,
@@ -23,7 +27,7 @@
     "customer_traffic",
     "festival_season"
   ],
-  "train_size": 292,
-  "test_size": 73,
+  "train_size": 182,
+  "test_size": 183,
   "forecast_days": 90
 }

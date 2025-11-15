@@ -1,100 +1,336 @@
 support,itemsets
-0.010390339792193204,frozenset({1000})
-0.013760179724796406,frozenset({1001})
-0.014883459702330806,frozenset({1002})
-0.012636899747262006,frozenset({1003})
-0.013198539736029205,frozenset({1004})
-0.015725919685481607,frozenset({1005})
-0.014883459702330806,frozenset({1006})
-0.013198539736029205,frozenset({1007})
-0.014040999719180006,frozenset({1008})
-0.013198539736029205,frozenset({1009})
-0.010671159786576805,frozenset({1010})
-0.013479359730412805,frozenset({1011})
-0.018814939623701208,frozenset({1012})
-0.015164279696714406,frozenset({1013})
-0.014602639707947207,frozenset({1014})
-0.014321819713563605,frozenset({1015})
-0.016568379668632408,frozenset({1016})
-0.015445099691098006,frozenset({1017})
-0.015445099691098006,frozenset({1018})
-0.013198539736029205,frozenset({1019})
-0.015445099691098006,frozenset({1020})
-0.010951979780960405,frozenset({1021})
-0.012917719741645605,frozenset({1022})
-0.014321819713563605,frozenset({1023})
-0.012917719741645605,frozenset({1024})
-0.017130019657399607,frozenset({1025})
-0.015164279696714406,frozenset({1026})
-0.013479359730412805,frozenset({1027})
-0.013198539736029205,frozenset({1028})
-0.012636899747262006,frozenset({1029})
-0.012356079752878404,frozenset({1030})
-0.011794439764111205,frozenset({1031})
-0.012356079752878404,frozenset({1032})
-0.014040999719180006,frozenset({1033})
-0.013760179724796406,frozenset({1034})
-0.013760179724796406,frozenset({1035})
-0.014040999719180006,frozenset({1036})
-0.016006739679865205,frozenset({1037})
-0.013198539736029205,frozenset({1038})
-0.014602639707947207,frozenset({1039})
-0.012636899747262006,frozenset({1040})
-0.012356079752878404,frozenset({1041})
-0.011232799775344004,frozenset({1042})
-0.017972479640550407,frozenset({1043})
-0.016006739679865205,frozenset({1044})
-0.012075259758494805,frozenset({1045})
-0.017691659646166806,frozenset({1046})
-0.018814939623701208,frozenset({1047})
-0.014883459702330806,frozenset({1049})
-0.015164279696714406,frozenset({1050})
-0.016006739679865205,frozenset({1051})
-0.014602639707947207,frozenset({1052})
-0.014602639707947207,frozenset({1053})
-0.012636899747262006,frozenset({1054})
-0.014883459702330806,frozenset({1055})
-0.015725919685481607,frozenset({1056})
-0.010671159786576805,frozenset({1057})
-0.013479359730412805,frozenset({1058})
-0.016568379668632408,frozenset({1059})
-0.011232799775344004,frozenset({1060})
-0.014883459702330806,frozenset({1061})
-0.014040999719180006,frozenset({1062})
-0.012636899747262006,frozenset({1063})
-0.014040999719180006,frozenset({1064})
-0.014602639707947207,frozenset({1065})
-0.010109519797809604,frozenset({1066})
-0.014602639707947207,frozenset({1067})
-0.013198539736029205,frozenset({1068})
-0.012917719741645605,frozenset({1069})
-0.015445099691098006,frozenset({1070})
-0.015445099691098006,frozenset({1071})
-0.011794439764111205,frozenset({1072})
-0.013760179724796406,frozenset({1073})
-0.011232799775344004,frozenset({1074})
-0.012356079752878404,frozenset({1075})
-0.015445099691098006,frozenset({1076})
-0.016568379668632408,frozenset({1077})
-0.014321819713563605,frozenset({1078})
-0.01909575961808481,frozenset({1079})
-0.015445099691098006,frozenset({1080})
-0.011794439764111205,frozenset({1081})
-0.013760179724796406,frozenset({1082})
-0.013479359730412805,frozenset({1083})
-0.012075259758494805,frozenset({1084})
-0.018814939623701208,frozenset({1085})
-0.016287559674248806,frozenset({1086})
-0.013760179724796406,frozenset({1087})
-0.012075259758494805,frozenset({1088})
-0.014321819713563605,frozenset({1089})
-0.013479359730412805,frozenset({1090})
-0.015164279696714406,frozenset({1091})
-0.016287559674248806,frozenset({1092})
-0.012636899747262006,frozenset({1093})
-0.012075259758494805,frozenset({1094})
-0.012917719741645605,frozenset({1095})
-0.012636899747262006,frozenset({1096})
-0.010390339792193204,frozenset({1097})
-0.013479359730412805,frozenset({1098})
-0.014040999719180006,frozenset({1099})
+0.297,frozenset({'Amazfit Bip U Pro Smartwatch'})
+0.301,frozenset({'Anker PowerCore 10K Powerbank'})
+0.29833333333333334,frozenset({'Boat Stone 200 Bluetooth Speaker'})
+0.2925,frozenset({'Dell Inspiron 3501 Laptop'})
+0.2951666666666667,frozenset({'HP Pavilion 15 Laptop'})
+0.30583333333333335,frozenset({'JBL C200 Bass Earphones'})
+0.2926666666666667,frozenset({'Lenovo Tab M10 Tablet'})
+0.30316666666666664,frozenset({'Mi Fast Charger 20W'})
+0.2946666666666667,frozenset({'Samsung Galaxy A52 Smartphone'})
+0.30233333333333334,frozenset({'Xiaomi Redmi Note 11 Smartphone'})
+0.08983333333333333,"frozenset({'Anker PowerCore 10K Powerbank', 'Amazfit Bip U Pro Smartwatch'})"
+0.08416666666666667,"frozenset({'Boat Stone 200 Bluetooth Speaker', 'Amazfit Bip U Pro Smartwatch'})"
+0.09016666666666667,"frozenset({'Amazfit Bip U Pro Smartwatch', 'Dell Inspiron 3501 Laptop'})"
+0.08766666666666667,"frozenset({'Amazfit Bip U Pro Smartwatch', 'HP Pavilion 15 Laptop'})"
+0.09533333333333334,"frozenset({'JBL C200 Bass Earphones', 'Amazfit Bip U Pro Smartwatch'})"
+0.088,"frozenset({'Lenovo Tab M10 Tablet', 'Amazfit Bip U Pro Smartwatch'})"
+0.089,"frozenset({'Amazfit Bip U Pro Smartwatch', 'Mi Fast Charger 20W'})"
+0.08416666666666667,"frozenset({'Samsung Galaxy A52 Smartphone', 'Amazfit Bip U Pro Smartwatch'})"
+0.09366666666666666,"frozenset({'Xiaomi Redmi Note 11 Smartphone', 'Amazfit Bip U Pro Smartwatch'})"
+0.09133333333333334,"frozenset({'Anker PowerCore 10K Powerbank', 'Boat Stone 200 Bluetooth Speaker'})"
+0.0865,"frozenset({'Anker PowerCore 10K Powerbank', 'Dell Inspiron 3501 Laptop'})"
+0.08483333333333333,"frozenset({'Anker PowerCore 10K Powerbank', 'HP Pavilion 15 Laptop'})"
+0.096,"frozenset({'Anker PowerCore 10K Powerbank', 'JBL C200 Bass Earphones'})"
+0.08683333333333333,"frozenset({'Anker PowerCore 10K Powerbank', 'Lenovo Tab M10 Tablet'})"
+0.08216666666666667,"frozenset({'Anker PowerCore 10K Powerbank', 'Mi Fast Charger 20W'})"
+0.083,"frozenset({'Anker PowerCore 10K Powerbank', 'Samsung Galaxy A52 Smartphone'})"
+0.08833333333333333,"frozenset({'Anker PowerCore 10K Powerbank', 'Xiaomi Redmi Note 11 Smartphone'})"
+0.08,"frozenset({'Boat Stone 200 Bluetooth Speaker', 'Dell Inspiron 3501 Laptop'})"
+0.09016666666666667,"frozenset({'Boat Stone 200 Bluetooth Speaker', 'HP Pavilion 15 Laptop'})"
+0.089,"frozenset({'JBL C200 Bass Earphones', 'Boat Stone 200 Bluetooth Speaker'})"
+0.084,"frozenset({'Lenovo Tab M10 Tablet', 'Boat Stone 200 Bluetooth Speaker'})"
+0.08516666666666667,"frozenset({'Boat Stone 200 Bluetooth Speaker', 'Mi Fast Charger 20W'})"
+0.088,"frozenset({'Samsung Galaxy A52 Smartphone', 'Boat Stone 200 Bluetooth Speaker'})"
+0.08883333333333333,"frozenset({'Xiaomi Redmi Note 11 Smartphone', 'Boat Stone 200 Bluetooth Speaker'})"
+0.08066666666666666,"frozenset({'HP Pavilion 15 Laptop', 'Dell Inspiron 3501 Laptop'})"
+0.0895,"frozenset({'JBL C200 Bass Earphones', 'Dell Inspiron 3501 Laptop'})"
+0.08033333333333334,"frozenset({'Lenovo Tab M10 Tablet', 'Dell Inspiron 3501 Laptop'})"
+0.08766666666666667,"frozenset({'Mi Fast Charger 20W', 'Dell Inspiron 3501 Laptop'})"
+0.08533333333333333,"frozenset({'Samsung Galaxy A52 Smartphone', 'Dell Inspiron 3501 Laptop'})"
+0.08566666666666667,"frozenset({'Xiaomi Redmi Note 11 Smartphone', 'Dell Inspiron 3501 Laptop'})"
+0.09516666666666666,"frozenset({'JBL C200 Bass Earphones', 'HP Pavilion 15 Laptop'})"
+0.083,"frozenset({'Lenovo Tab M10 Tablet', 'HP Pavilion 15 Laptop'})"
+0.09333333333333334,"frozenset({'HP Pavilion 15 Laptop', 'Mi Fast Charger 20W'})"
+0.08366666666666667,"frozenset({'Samsung Galaxy A52 Smartphone', 'HP Pavilion 15 Laptop'})"
+0.085,"frozenset({'Xiaomi Redmi Note 11 Smartphone', 'HP Pavilion 15 Laptop'})"
+0.09266666666666666,"frozenset({'JBL C200 Bass Earphones', 'Lenovo Tab M10 Tablet'})"
+0.093,"frozenset({'JBL C200 Bass Earphones', 'Mi Fast Charger 20W'})"
+0.08933333333333333,"frozenset({'JBL C200 Bass Earphones', 'Samsung Galaxy A52 Smartphone'})"
+0.09,"frozenset({'JBL C200 Bass Earphones', 'Xiaomi Redmi Note 11 Smartphone'})"
+0.08516666666666667,"frozenset({'Lenovo Tab M10 Tablet', 'Mi Fast Charger 20W'})"
+0.08483333333333333,"frozenset({'Lenovo Tab M10 Tablet', 'Samsung Galaxy A52 Smartphone'})"
+0.087,"frozenset({'Lenovo Tab M10 Tablet', 'Xiaomi Redmi Note 11 Smartphone'})"
+0.09066666666666667,"frozenset({'Samsung Galaxy A52 Smartphone', 'Mi Fast Charger 20W'})"
+0.0925,"frozenset({'Xiaomi Redmi Note 11 Smartphone', 'Mi Fast Charger 20W'})"
+0.0885,"frozenset({'Samsung Galaxy A52 Smartphone', 'Xiaomi Redmi Note 11 Smartphone'})"
+0.0255,"frozenset({'Anker PowerCore 10K Powerbank', 'Boat Stone 200 Bluetooth Speaker', 'Amazfit Bip U Pro Smartwatch'})"
+0.0275,"frozenset({'Anker PowerCore 10K Powerbank', 'Amazfit Bip U Pro Smartwatch', 'Dell Inspiron 3501 Laptop'})"
+0.025666666666666667,"frozenset({'Anker PowerCore 10K Powerbank', 'Amazfit Bip U Pro Smartwatch', 'HP Pavilion 15 Laptop'})"
+0.026,"frozenset({'Anker PowerCore 10K Powerbank', 'JBL C200 Bass Earphones', 'Amazfit Bip U Pro Smartwatch'})"
+0.026833333333333334,"frozenset({'Anker PowerCore 10K Powerbank', 'Lenovo Tab M10 Tablet', 'Amazfit Bip U Pro Smartwatch'})"
+0.02266666666666667,"frozenset({'Anker PowerCore 10K Powerbank', 'Amazfit Bip U Pro Smartwatch', 'Mi Fast Charger 20W'})"
+0.02266666666666667,"frozenset({'Anker PowerCore 10K Powerbank', 'Samsung Galaxy A52 Smartphone', 'Amazfit Bip U Pro Smartwatch'})"
+0.027,"frozenset({'Anker PowerCore 10K Powerbank', 'Xiaomi Redmi Note 11 Smartphone', 'Amazfit Bip U Pro Smartwatch'})"
+0.022166666666666668,"frozenset({'Boat Stone 200 Bluetooth Speaker', 'Amazfit Bip U Pro Smartwatch', 'Dell Inspiron 3501 Laptop'})"
+0.023666666666666666,"frozenset({'Boat Stone 200 Bluetooth Speaker', 'Amazfit Bip U Pro Smartwatch', 'HP Pavilion 15 Laptop'})"
+0.0235,"frozenset({'JBL C200 Bass Earphones', 'Boat Stone 200 Bluetooth Speaker', 'Amazfit Bip U Pro Smartwatch'})"
+0.023,"frozenset({'Lenovo Tab M10 Tablet', 'Boat Stone 200 Bluetooth Speaker', 'Amazfit Bip U Pro Smartwatch'})"
+0.024,"frozenset({'Boat Stone 200 Bluetooth Speaker', 'Amazfit Bip U Pro Smartwatch', 'Mi Fast Charger 20W'})"
+0.024833333333333332,"frozenset({'Samsung Galaxy A52 Smartphone', 'Boat Stone 200 Bluetooth Speaker', 'Amazfit Bip U Pro Smartwatch'})"
+0.0245,"frozenset({'Xiaomi Redmi Note 11 Smartphone', 'Amazfit Bip U Pro Smartwatch', 'Boat Stone 200 Bluetooth Speaker'})"
+0.024,"frozenset({'Amazfit Bip U Pro Smartwatch', 'HP Pavilion 15 Laptop', 'Dell Inspiron 3501 Laptop'})"
+0.0305,"frozenset({'JBL C200 Bass Earphones', 'Amazfit Bip U Pro Smartwatch', 'Dell Inspiron 3501 Laptop'})"
+0.024833333333333332,"frozenset({'Lenovo Tab M10 Tablet', 'Amazfit Bip U Pro Smartwatch', 'Dell Inspiron 3501 Laptop'})"
+0.0275,"frozenset({'Amazfit Bip U Pro Smartwatch', 'Mi Fast Charger 20W', 'Dell Inspiron 3501 Laptop'})"
+0.024166666666666666,"frozenset({'Samsung Galaxy A52 Smartphone', 'Amazfit Bip U Pro Smartwatch', 'Dell Inspiron 3501 Laptop'})"
+0.0265,"frozenset({'Xiaomi Redmi Note 11 Smartphone', 'Amazfit Bip U Pro Smartwatch', 'Dell Inspiron 3501 Laptop'})"
+0.0285,"frozenset({'JBL C200 Bass Earphones', 'Amazfit Bip U Pro Smartwatch', 'HP Pavilion 15 Laptop'})"
+0.0235,"frozenset({'Lenovo Tab M10 Tablet', 'Amazfit Bip U Pro Smartwatch', 'HP Pavilion 15 Laptop'})"
+0.027,"frozenset({'Mi Fast Charger 20W', 'Amazfit Bip U Pro Smartwatch', 'HP Pavilion 15 Laptop'})"
+0.0225,"frozenset({'Samsung Galaxy A52 Smartphone', 'Amazfit Bip U Pro Smartwatch', 'HP Pavilion 15 Laptop'})"
+0.024666666666666667,"frozenset({'Xiaomi Redmi Note 11 Smartphone', 'Amazfit Bip U Pro Smartwatch', 'HP Pavilion 15 Laptop'})"
+0.026,"frozenset({'JBL C200 Bass Earphones', 'Lenovo Tab M10 Tablet', 'Amazfit Bip U Pro Smartwatch'})"
+0.027166666666666665,"frozenset({'JBL C200 Bass Earphones', 'Amazfit Bip U Pro Smartwatch', 'Mi Fast Charger 20W'})"
+0.026166666666666668,"frozenset({'JBL C200 Bass Earphones', 'Samsung Galaxy A52 Smartphone', 'Amazfit Bip U Pro Smartwatch'})"
+0.028,"frozenset({'JBL C200 Bass Earphones', 'Xiaomi Redmi Note 11 Smartphone', 'Amazfit Bip U Pro Smartwatch'})"
+0.024833333333333332,"frozenset({'Lenovo Tab M10 Tablet', 'Amazfit Bip U Pro Smartwatch', 'Mi Fast Charger 20W'})"
+0.022833333333333334,"frozenset({'Lenovo Tab M10 Tablet', 'Samsung Galaxy A52 Smartphone', 'Amazfit Bip U Pro Smartwatch'})"
+0.02666666666666667,"frozenset({'Lenovo Tab M10 Tablet', 'Xiaomi Redmi Note 11 Smartphone', 'Amazfit Bip U Pro Smartwatch'})"
+0.024,"frozenset({'Samsung Galaxy A52 Smartphone', 'Amazfit Bip U Pro Smartwatch', 'Mi Fast Charger 20W'})"
+0.0255,"frozenset({'Xiaomi Redmi Note 11 Smartphone', 'Amazfit Bip U Pro Smartwatch', 'Mi Fast Charger 20W'})"
+0.024666666666666667,"frozenset({'Samsung Galaxy A52 Smartphone', 'Xiaomi Redmi Note 11 Smartphone', 'Amazfit Bip U Pro Smartwatch'})"
+0.024,"frozenset({'Anker PowerCore 10K Powerbank', 'Boat Stone 200 Bluetooth Speaker', 'Dell Inspiron 3501 Laptop'})"
+0.025666666666666667,"frozenset({'Anker PowerCore 10K Powerbank', 'Boat Stone 200 Bluetooth Speaker', 'HP Pavilion 15 Laptop'})"
+0.027666666666666666,"frozenset({'Anker PowerCore 10K Powerbank', 'JBL C200 Bass Earphones', 'Boat Stone 200 Bluetooth Speaker'})"
+0.023666666666666666,"frozenset({'Anker PowerCore 10K Powerbank', 'Lenovo Tab M10 Tablet', 'Boat Stone 200 Bluetooth Speaker'})"
+0.021166666666666667,"frozenset({'Anker PowerCore 10K Powerbank', 'Boat Stone 200 Bluetooth Speaker', 'Mi Fast Charger 20W'})"
+0.026166666666666668,"frozenset({'Anker PowerCore 10K Powerbank', 'Samsung Galaxy A52 Smartphone', 'Boat Stone 200 Bluetooth Speaker'})"
+0.024666666666666667,"frozenset({'Anker PowerCore 10K Powerbank', 'Xiaomi Redmi Note 11 Smartphone', 'Boat Stone 200 Bluetooth Speaker'})"
+0.0215,"frozenset({'Anker PowerCore 10K Powerbank', 'HP Pavilion 15 Laptop', 'Dell Inspiron 3501 Laptop'})"
+0.027666666666666666,"frozenset({'Anker PowerCore 10K Powerbank', 'JBL C200 Bass Earphones', 'Dell Inspiron 3501 Laptop'})"
+0.022,"frozenset({'Anker PowerCore 10K Powerbank', 'Lenovo Tab M10 Tablet', 'Dell Inspiron 3501 Laptop'})"
+0.021,"frozenset({'Anker PowerCore 10K Powerbank', 'Mi Fast Charger 20W', 'Dell Inspiron 3501 Laptop'})"
+0.022,"frozenset({'Anker PowerCore 10K Powerbank', 'Samsung Galaxy A52 Smartphone', 'Dell Inspiron 3501 Laptop'})"
+0.025166666666666667,"frozenset({'Anker PowerCore 10K Powerbank', 'Xiaomi Redmi Note 11 Smartphone', 'Dell Inspiron 3501 Laptop'})"
+0.027333333333333334,"frozenset({'Anker PowerCore 10K Powerbank', 'JBL C200 Bass Earphones', 'HP Pavilion 15 Laptop'})"
+0.0235,"frozenset({'Anker PowerCore 10K Powerbank', 'Lenovo Tab M10 Tablet', 'HP Pavilion 15 Laptop'})"
+0.022166666666666668,"frozenset({'Anker PowerCore 10K Powerbank', 'HP Pavilion 15 Laptop', 'Mi Fast Charger 20W'})"
+0.021833333333333333,"frozenset({'Anker PowerCore 10K Powerbank', 'Samsung Galaxy A52 Smartphone', 'HP Pavilion 15 Laptop'})"
+0.023,"frozenset({'Anker PowerCore 10K Powerbank', 'Xiaomi Redmi Note 11 Smartphone', 'HP Pavilion 15 Laptop'})"
+0.028666666666666667,"frozenset({'Anker PowerCore 10K Powerbank', 'Lenovo Tab M10 Tablet', 'JBL C200 Bass Earphones'})"
+0.027333333333333334,"frozenset({'Anker PowerCore 10K Powerbank', 'JBL C200 Bass Earphones', 'Mi Fast Charger 20W'})"
+0.024166666666666666,"frozenset({'Anker PowerCore 10K Powerbank', 'Samsung Galaxy A52 Smartphone', 'JBL C200 Bass Earphones'})"
+0.025166666666666667,"frozenset({'Anker PowerCore 10K Powerbank', 'Xiaomi Redmi Note 11 Smartphone', 'JBL C200 Bass Earphones'})"
+0.021333333333333333,"frozenset({'Anker PowerCore 10K Powerbank', 'Lenovo Tab M10 Tablet', 'Mi Fast Charger 20W'})"
+0.023833333333333335,"frozenset({'Anker PowerCore 10K Powerbank', 'Samsung Galaxy A52 Smartphone', 'Lenovo Tab M10 Tablet'})"
+0.023,"frozenset({'Anker PowerCore 10K Powerbank', 'Lenovo Tab M10 Tablet', 'Xiaomi Redmi Note 11 Smartphone'})"
+0.021166666666666667,"frozenset({'Anker PowerCore 10K Powerbank', 'Samsung Galaxy A52 Smartphone', 'Mi Fast Charger 20W'})"
+0.0245,"frozenset({'Anker PowerCore 10K Powerbank', 'Xiaomi Redmi Note 11 Smartphone', 'Mi Fast Charger 20W'})"
+0.022166666666666668,"frozenset({'Anker PowerCore 10K Powerbank', 'Samsung Galaxy A52 Smartphone', 'Xiaomi Redmi Note 11 Smartphone'})"
+0.020833333333333332,"frozenset({'Boat Stone 200 Bluetooth Speaker', 'HP Pavilion 15 Laptop', 'Dell Inspiron 3501 Laptop'})"
+0.023,"frozenset({'JBL C200 Bass Earphones', 'Boat Stone 200 Bluetooth Speaker', 'Dell Inspiron 3501 Laptop'})"
+0.019,"frozenset({'Lenovo Tab M10 Tablet', 'Boat Stone 200 Bluetooth Speaker', 'Dell Inspiron 3501 Laptop'})"
+0.022,"frozenset({'Boat Stone 200 Bluetooth Speaker', 'Mi Fast Charger 20W', 'Dell Inspiron 3501 Laptop'})"
+0.0235,"frozenset({'Samsung Galaxy A52 Smartphone', 'Boat Stone 200 Bluetooth Speaker', 'Dell Inspiron 3501 Laptop'})"
+0.023166666666666665,"frozenset({'Xiaomi Redmi Note 11 Smartphone', 'Boat Stone 200 Bluetooth Speaker', 'Dell Inspiron 3501 Laptop'})"
+0.028,"frozenset({'JBL C200 Bass Earphones', 'Boat Stone 200 Bluetooth Speaker', 'HP Pavilion 15 Laptop'})"
+0.0245,"frozenset({'Lenovo Tab M10 Tablet', 'Boat Stone 200 Bluetooth Speaker', 'HP Pavilion 15 Laptop'})"
+0.027333333333333334,"frozenset({'Mi Fast Charger 20W', 'Boat Stone 200 Bluetooth Speaker', 'HP Pavilion 15 Laptop'})"
+0.024,"frozenset({'Samsung Galaxy A52 Smartphone', 'Boat Stone 200 Bluetooth Speaker', 'HP Pavilion 15 Laptop'})"
+0.023833333333333335,"frozenset({'Xiaomi Redmi Note 11 Smartphone', 'Boat Stone 200 Bluetooth Speaker', 'HP Pavilion 15 Laptop'})"
+0.024666666666666667,"frozenset({'JBL C200 Bass Earphones', 'Lenovo Tab M10 Tablet', 'Boat Stone 200 Bluetooth Speaker'})"
+0.021833333333333333,"frozenset({'JBL C200 Bass Earphones', 'Boat Stone 200 Bluetooth Speaker', 'Mi Fast Charger 20W'})"
+0.024666666666666667,"frozenset({'JBL C200 Bass Earphones', 'Samsung Galaxy A52 Smartphone', 'Boat Stone 200 Bluetooth Speaker'})"
+0.025666666666666667,"frozenset({'JBL C200 Bass Earphones', 'Xiaomi Redmi Note 11 Smartphone', 'Boat Stone 200 Bluetooth Speaker'})"
+0.0215,"frozenset({'Lenovo Tab M10 Tablet', 'Boat Stone 200 Bluetooth Speaker', 'Mi Fast Charger 20W'})"
+0.0245,"frozenset({'Lenovo Tab M10 Tablet', 'Samsung Galaxy A52 Smartphone', 'Boat Stone 200 Bluetooth Speaker'})"
+0.024666666666666667,"frozenset({'Lenovo Tab M10 Tablet', 'Xiaomi Redmi Note 11 Smartphone', 'Boat Stone 200 Bluetooth Speaker'})"
+0.023666666666666666,"frozenset({'Samsung Galaxy A52 Smartphone', 'Boat Stone 200 Bluetooth Speaker', 'Mi Fast Charger 20W'})"
+0.025833333333333333,"frozenset({'Xiaomi Redmi Note 11 Smartphone', 'Boat Stone 200 Bluetooth Speaker', 'Mi Fast Charger 20W'})"
+0.024166666666666666,"frozenset({'Samsung Galaxy A52 Smartphone', 'Xiaomi Redmi Note 11 Smartphone', 'Boat Stone 200 Bluetooth Speaker'})"
+0.025,"frozenset({'JBL C200 Bass Earphones', 'HP Pavilion 15 Laptop', 'Dell Inspiron 3501 Laptop'})"
+0.022166666666666668,"frozenset({'Lenovo Tab M10 Tablet', 'HP Pavilion 15 Laptop', 'Dell Inspiron 3501 Laptop'})"
+0.026,"frozenset({'HP Pavilion 15 Laptop', 'Mi Fast Charger 20W', 'Dell Inspiron 3501 Laptop'})"
+0.02,"frozenset({'Samsung Galaxy A52 Smartphone', 'HP Pavilion 15 Laptop', 'Dell Inspiron 3501 Laptop'})"
+0.022333333333333334,"frozenset({'Xiaomi Redmi Note 11 Smartphone', 'HP Pavilion 15 Laptop', 'Dell Inspiron 3501 Laptop'})"
+0.025333333333333333,"frozenset({'JBL C200 Bass Earphones', 'Lenovo Tab M10 Tablet', 'Dell Inspiron 3501 Laptop'})"
+0.026166666666666668,"frozenset({'JBL C200 Bass Earphones', 'Mi Fast Charger 20W', 'Dell Inspiron 3501 Laptop'})"
+0.024,"frozenset({'JBL C200 Bass Earphones', 'Samsung Galaxy A52 Smartphone', 'Dell Inspiron 3501 Laptop'})"
+0.0235,"frozenset({'JBL C200 Bass Earphones', 'Xiaomi Redmi Note 11 Smartphone', 'Dell Inspiron 3501 Laptop'})"
+0.024333333333333332,"frozenset({'Lenovo Tab M10 Tablet', 'Mi Fast Charger 20W', 'Dell Inspiron 3501 Laptop'})"
+0.021833333333333333,"frozenset({'Lenovo Tab M10 Tablet', 'Samsung Galaxy A52 Smartphone', 'Dell Inspiron 3501 Laptop'})"
+0.02266666666666667,"frozenset({'Lenovo Tab M10 Tablet', 'Xiaomi Redmi Note 11 Smartphone', 'Dell Inspiron 3501 Laptop'})"
+0.025666666666666667,"frozenset({'Samsung Galaxy A52 Smartphone', 'Mi Fast Charger 20W', 'Dell Inspiron 3501 Laptop'})"
+0.024833333333333332,"frozenset({'Xiaomi Redmi Note 11 Smartphone', 'Mi Fast Charger 20W', 'Dell Inspiron 3501 Laptop'})"
+0.024,"frozenset({'Samsung Galaxy A52 Smartphone', 'Xiaomi Redmi Note 11 Smartphone', 'Dell Inspiron 3501 Laptop'})"
+0.027666666666666666,"frozenset({'JBL C200 Bass Earphones', 'Lenovo Tab M10 Tablet', 'HP Pavilion 15 Laptop'})"
+0.0295,"frozenset({'JBL C200 Bass Earphones', 'HP Pavilion 15 Laptop', 'Mi Fast Charger 20W'})"
+0.025,"frozenset({'JBL C200 Bass Earphones', 'Samsung Galaxy A52 Smartphone', 'HP Pavilion 15 Laptop'})"
+0.024166666666666666,"frozenset({'JBL C200 Bass Earphones', 'Xiaomi Redmi Note 11 Smartphone', 'HP Pavilion 15 Laptop'})"
+0.025166666666666667,"frozenset({'Lenovo Tab M10 Tablet', 'HP Pavilion 15 Laptop', 'Mi Fast Charger 20W'})"
+0.02033333333333333,"frozenset({'Lenovo Tab M10 Tablet', 'Samsung Galaxy A52 Smartphone', 'HP Pavilion 15 Laptop'})"
+0.024,"frozenset({'Lenovo Tab M10 Tablet', 'Xiaomi Redmi Note 11 Smartphone', 'HP Pavilion 15 Laptop'})"
+0.026333333333333334,"frozenset({'Samsung Galaxy A52 Smartphone', 'HP Pavilion 15 Laptop', 'Mi Fast Charger 20W'})"
+0.02666666666666667,"frozenset({'Xiaomi Redmi Note 11 Smartphone', 'HP Pavilion 15 Laptop', 'Mi Fast Charger 20W'})"
+0.025,"frozenset({'Samsung Galaxy A52 Smartphone', 'Xiaomi Redmi Note 11 Smartphone', 'HP Pavilion 15 Laptop'})"
+0.026,"frozenset({'JBL C200 Bass Earphones', 'Lenovo Tab M10 Tablet', 'Mi Fast Charger 20W'})"
+0.025,"frozenset({'JBL C200 Bass Earphones', 'Samsung Galaxy A52 Smartphone', 'Lenovo Tab M10 Tablet'})"
+0.026833333333333334,"frozenset({'JBL C200 Bass Earphones', 'Lenovo Tab M10 Tablet', 'Xiaomi Redmi Note 11 Smartphone'})"
+0.026333333333333334,"frozenset({'JBL C200 Bass Earphones', 'Samsung Galaxy A52 Smartphone', 'Mi Fast Charger 20W'})"
+0.026833333333333334,"frozenset({'JBL C200 Bass Earphones', 'Xiaomi Redmi Note 11 Smartphone', 'Mi Fast Charger 20W'})"
+0.025,"frozenset({'JBL C200 Bass Earphones', 'Samsung Galaxy A52 Smartphone', 'Xiaomi Redmi Note 11 Smartphone'})"
+0.025166666666666667,"frozenset({'Lenovo Tab M10 Tablet', 'Samsung Galaxy A52 Smartphone', 'Mi Fast Charger 20W'})"
+0.023833333333333335,"frozenset({'Lenovo Tab M10 Tablet', 'Xiaomi Redmi Note 11 Smartphone', 'Mi Fast Charger 20W'})"
+0.0235,"frozenset({'Lenovo Tab M10 Tablet', 'Samsung Galaxy A52 Smartphone', 'Xiaomi Redmi Note 11 Smartphone'})"
+0.027833333333333335,"frozenset({'Samsung Galaxy A52 Smartphone', 'Xiaomi Redmi Note 11 Smartphone', 'Mi Fast Charger 20W'})"
+0.007333333333333333,"frozenset({'Anker PowerCore 10K Powerbank', 'Boat Stone 200 Bluetooth Speaker', 'Amazfit Bip U Pro Smartwatch', 'Dell Inspiron 3501 Laptop'})"
+0.005666666666666667,"frozenset({'Anker PowerCore 10K Powerbank', 'Boat Stone 200 Bluetooth Speaker', 'Amazfit Bip U Pro Smartwatch', 'HP Pavilion 15 Laptop'})"
+0.005,"frozenset({'Anker PowerCore 10K Powerbank', 'Boat Stone 200 Bluetooth Speaker', 'JBL C200 Bass Earphones', 'Amazfit Bip U Pro Smartwatch'})"
+0.006333333333333333,"frozenset({'Anker PowerCore 10K Powerbank', 'Lenovo Tab M10 Tablet', 'Boat Stone 200 Bluetooth Speaker', 'Amazfit Bip U Pro Smartwatch'})"
+0.007166666666666667,"frozenset({'Anker PowerCore 10K Powerbank', 'Samsung Galaxy A52 Smartphone', 'Boat Stone 200 Bluetooth Speaker', 'Amazfit Bip U Pro Smartwatch'})"
+0.006666666666666667,"frozenset({'Anker PowerCore 10K Powerbank', 'Boat Stone 200 Bluetooth Speaker', 'Amazfit Bip U Pro Smartwatch', 'Xiaomi Redmi Note 11 Smartphone'})"
+0.006833333333333334,"frozenset({'Anker PowerCore 10K Powerbank', 'Amazfit Bip U Pro Smartwatch', 'HP Pavilion 15 Laptop', 'Dell Inspiron 3501 Laptop'})"
+0.006,"frozenset({'Anker PowerCore 10K Powerbank', 'JBL C200 Bass Earphones', 'Amazfit Bip U Pro Smartwatch', 'Dell Inspiron 3501 Laptop'})"
+0.006166666666666667,"frozenset({'Anker PowerCore 10K Powerbank', 'Lenovo Tab M10 Tablet', 'Amazfit Bip U Pro Smartwatch', 'Dell Inspiron 3501 Laptop'})"
+0.0055,"frozenset({'Anker PowerCore 10K Powerbank', 'Amazfit Bip U Pro Smartwatch', 'Mi Fast Charger 20W', 'Dell Inspiron 3501 Laptop'})"
+0.005166666666666667,"frozenset({'Anker PowerCore 10K Powerbank', 'Samsung Galaxy A52 Smartphone', 'Amazfit Bip U Pro Smartwatch', 'Dell Inspiron 3501 Laptop'})"
+0.006,"frozenset({'Anker PowerCore 10K Powerbank', 'Xiaomi Redmi Note 11 Smartphone', 'Amazfit Bip U Pro Smartwatch', 'Dell Inspiron 3501 Laptop'})"
+0.007,"frozenset({'Anker PowerCore 10K Powerbank', 'JBL C200 Bass Earphones', 'Amazfit Bip U Pro Smartwatch', 'HP Pavilion 15 Laptop'})"
+0.006333333333333333,"frozenset({'Anker PowerCore 10K Powerbank', 'Lenovo Tab M10 Tablet', 'Amazfit Bip U Pro Smartwatch', 'HP Pavilion 15 Laptop'})"
+0.005,"frozenset({'Anker PowerCore 10K Powerbank', 'Samsung Galaxy A52 Smartphone', 'Amazfit Bip U Pro Smartwatch', 'HP Pavilion 15 Laptop'})"
+0.007833333333333333,"frozenset({'Anker PowerCore 10K Powerbank', 'Xiaomi Redmi Note 11 Smartphone', 'Amazfit Bip U Pro Smartwatch', 'HP Pavilion 15 Laptop'})"
+0.006166666666666667,"frozenset({'Anker PowerCore 10K Powerbank', 'Lenovo Tab M10 Tablet', 'JBL C200 Bass Earphones', 'Amazfit Bip U Pro Smartwatch'})"
+0.006333333333333333,"frozenset({'Anker PowerCore 10K Powerbank', 'JBL C200 Bass Earphones', 'Amazfit Bip U Pro Smartwatch', 'Mi Fast Charger 20W'})"
+0.005666666666666667,"frozenset({'Anker PowerCore 10K Powerbank', 'Samsung Galaxy A52 Smartphone', 'JBL C200 Bass Earphones', 'Amazfit Bip U Pro Smartwatch'})"
+0.005333333333333333,"frozenset({'Anker PowerCore 10K Powerbank', 'Xiaomi Redmi Note 11 Smartphone', 'JBL C200 Bass Earphones', 'Amazfit Bip U Pro Smartwatch'})"
+0.006166666666666667,"frozenset({'Anker PowerCore 10K Powerbank', 'Lenovo Tab M10 Tablet', 'Samsung Galaxy A52 Smartphone', 'Amazfit Bip U Pro Smartwatch'})"
+0.007,"frozenset({'Anker PowerCore 10K Powerbank', 'Lenovo Tab M10 Tablet', 'Xiaomi Redmi Note 11 Smartphone', 'Amazfit Bip U Pro Smartwatch'})"
+0.0055,"frozenset({'Anker PowerCore 10K Powerbank', 'Xiaomi Redmi Note 11 Smartphone', 'Amazfit Bip U Pro Smartwatch', 'Mi Fast Charger 20W'})"
+0.0055,"frozenset({'JBL C200 Bass Earphones', 'Boat Stone 200 Bluetooth Speaker', 'Amazfit Bip U Pro Smartwatch', 'Dell Inspiron 3501 Laptop'})"
+0.005,"frozenset({'Boat Stone 200 Bluetooth Speaker', 'Amazfit Bip U Pro Smartwatch', 'Mi Fast Charger 20W', 'Dell Inspiron 3501 Laptop'})"
+0.005166666666666667,"frozenset({'Samsung Galaxy A52 Smartphone', 'Boat Stone 200 Bluetooth Speaker', 'Amazfit Bip U Pro Smartwatch', 'Dell Inspiron 3501 Laptop'})"
+0.005166666666666667,"frozenset({'Dell Inspiron 3501 Laptop', 'Xiaomi Redmi Note 11 Smartphone', 'Amazfit Bip U Pro Smartwatch', 'Boat Stone 200 Bluetooth Speaker'})"
+0.0065,"frozenset({'JBL C200 Bass Earphones', 'Boat Stone 200 Bluetooth Speaker', 'Amazfit Bip U Pro Smartwatch', 'HP Pavilion 15 Laptop'})"
+0.007,"frozenset({'Mi Fast Charger 20W', 'Boat Stone 200 Bluetooth Speaker', 'Amazfit Bip U Pro Smartwatch', 'HP Pavilion 15 Laptop'})"
+0.006333333333333333,"frozenset({'Samsung Galaxy A52 Smartphone', 'Boat Stone 200 Bluetooth Speaker', 'Amazfit Bip U Pro Smartwatch', 'HP Pavilion 15 Laptop'})"
+0.0055,"frozenset({'Xiaomi Redmi Note 11 Smartphone', 'Amazfit Bip U Pro Smartwatch', 'HP Pavilion 15 Laptop', 'Boat Stone 200 Bluetooth Speaker'})"
+0.005166666666666667,"frozenset({'JBL C200 Bass Earphones', 'Lenovo Tab M10 Tablet', 'Boat Stone 200 Bluetooth Speaker', 'Amazfit Bip U Pro Smartwatch'})"
+0.005166666666666667,"frozenset({'JBL C200 Bass Earphones', 'Boat Stone 200 Bluetooth Speaker', 'Amazfit Bip U Pro Smartwatch', 'Mi Fast Charger 20W'})"
+0.005333333333333333,"frozenset({'JBL C200 Bass Earphones', 'Samsung Galaxy A52 Smartphone', 'Boat Stone 200 Bluetooth Speaker', 'Amazfit Bip U Pro Smartwatch'})"
+0.005833333333333334,"frozenset({'JBL C200 Bass Earphones', 'Xiaomi Redmi Note 11 Smartphone', 'Amazfit Bip U Pro Smartwatch', 'Boat Stone 200 Bluetooth Speaker'})"
+0.005833333333333334,"frozenset({'Lenovo Tab M10 Tablet', 'Boat Stone 200 Bluetooth Speaker', 'Amazfit Bip U Pro Smartwatch', 'Mi Fast Charger 20W'})"
+0.005666666666666667,"frozenset({'Lenovo Tab M10 Tablet', 'Samsung Galaxy A52 Smartphone', 'Boat Stone 200 Bluetooth Speaker', 'Amazfit Bip U Pro Smartwatch'})"
+0.0055,"frozenset({'Xiaomi Redmi Note 11 Smartphone', 'Amazfit Bip U Pro Smartwatch', 'Mi Fast Charger 20W', 'Boat Stone 200 Bluetooth Speaker'})"
+0.005166666666666667,"frozenset({'Samsung Galaxy A52 Smartphone', 'Boat Stone 200 Bluetooth Speaker', 'Amazfit Bip U Pro Smartwatch', 'Xiaomi Redmi Note 11 Smartphone'})"
+0.007333333333333333,"frozenset({'JBL C200 Bass Earphones', 'Amazfit Bip U Pro Smartwatch', 'HP Pavilion 15 Laptop', 'Dell Inspiron 3501 Laptop'})"
+0.005833333333333334,"frozenset({'Lenovo Tab M10 Tablet', 'Amazfit Bip U Pro Smartwatch', 'HP Pavilion 15 Laptop', 'Dell Inspiron 3501 Laptop'})"
+0.006833333333333334,"frozenset({'Mi Fast Charger 20W', 'Amazfit Bip U Pro Smartwatch', 'HP Pavilion 15 Laptop', 'Dell Inspiron 3501 Laptop'})"
+0.005333333333333333,"frozenset({'Xiaomi Redmi Note 11 Smartphone', 'Amazfit Bip U Pro Smartwatch', 'HP Pavilion 15 Laptop', 'Dell Inspiron 3501 Laptop'})"
+0.006666666666666667,"frozenset({'JBL C200 Bass Earphones', 'Lenovo Tab M10 Tablet', 'Amazfit Bip U Pro Smartwatch', 'Dell Inspiron 3501 Laptop'})"
+0.007333333333333333,"frozenset({'JBL C200 Bass Earphones', 'Amazfit Bip U Pro Smartwatch', 'Mi Fast Charger 20W', 'Dell Inspiron 3501 Laptop'})"
+0.007166666666666667,"frozenset({'JBL C200 Bass Earphones', 'Samsung Galaxy A52 Smartphone', 'Amazfit Bip U Pro Smartwatch', 'Dell Inspiron 3501 Laptop'})"
+0.0075,"frozenset({'JBL C200 Bass Earphones', 'Xiaomi Redmi Note 11 Smartphone', 'Amazfit Bip U Pro Smartwatch', 'Dell Inspiron 3501 Laptop'})"
+0.006,"frozenset({'Lenovo Tab M10 Tablet', 'Amazfit Bip U Pro Smartwatch', 'Mi Fast Charger 20W', 'Dell Inspiron 3501 Laptop'})"
+0.0055,"frozenset({'Lenovo Tab M10 Tablet', 'Samsung Galaxy A52 Smartphone', 'Amazfit Bip U Pro Smartwatch', 'Dell Inspiron 3501 Laptop'})"
+0.0065,"frozenset({'Lenovo Tab M10 Tablet', 'Xiaomi Redmi Note 11 Smartphone', 'Amazfit Bip U Pro Smartwatch', 'Dell Inspiron 3501 Laptop'})"
+0.006166666666666667,"frozenset({'Samsung Galaxy A52 Smartphone', 'Amazfit Bip U Pro Smartwatch', 'Mi Fast Charger 20W', 'Dell Inspiron 3501 Laptop'})"
+0.007333333333333333,"frozenset({'Xiaomi Redmi Note 11 Smartphone', 'Amazfit Bip U Pro Smartwatch', 'Mi Fast Charger 20W', 'Dell Inspiron 3501 Laptop'})"
+0.0055,"frozenset({'Samsung Galaxy A52 Smartphone', 'Xiaomi Redmi Note 11 Smartphone', 'Amazfit Bip U Pro Smartwatch', 'Dell Inspiron 3501 Laptop'})"
+0.005833333333333334,"frozenset({'JBL C200 Bass Earphones', 'Lenovo Tab M10 Tablet', 'Amazfit Bip U Pro Smartwatch', 'HP Pavilion 15 Laptop'})"
+0.0075,"frozenset({'JBL C200 Bass Earphones', 'Mi Fast Charger 20W', 'Amazfit Bip U Pro Smartwatch', 'HP Pavilion 15 Laptop'})"
+0.005833333333333334,"frozenset({'JBL C200 Bass Earphones', 'Samsung Galaxy A52 Smartphone', 'Amazfit Bip U Pro Smartwatch', 'HP Pavilion 15 Laptop'})"
+0.007333333333333333,"frozenset({'Lenovo Tab M10 Tablet', 'Mi Fast Charger 20W', 'Amazfit Bip U Pro Smartwatch', 'HP Pavilion 15 Laptop'})"
+0.005,"frozenset({'Samsung Galaxy A52 Smartphone', 'Mi Fast Charger 20W', 'Amazfit Bip U Pro Smartwatch', 'HP Pavilion 15 Laptop'})"
+0.005,"frozenset({'Mi Fast Charger 20W', 'Xiaomi Redmi Note 11 Smartphone', 'Amazfit Bip U Pro Smartwatch', 'HP Pavilion 15 Laptop'})"
+0.005666666666666667,"frozenset({'Samsung Galaxy A52 Smartphone', 'Xiaomi Redmi Note 11 Smartphone', 'Amazfit Bip U Pro Smartwatch', 'HP Pavilion 15 Laptop'})"
+0.006,"frozenset({'JBL C200 Bass Earphones', 'Lenovo Tab M10 Tablet', 'Amazfit Bip U Pro Smartwatch', 'Mi Fast Charger 20W'})"
+0.005,"frozenset({'JBL C200 Bass Earphones', 'Samsung Galaxy A52 Smartphone', 'Amazfit Bip U Pro Smartwatch', 'Lenovo Tab M10 Tablet'})"
+0.0075,"frozenset({'JBL C200 Bass Earphones', 'Lenovo Tab M10 Tablet', 'Xiaomi Redmi Note 11 Smartphone', 'Amazfit Bip U Pro Smartwatch'})"
+0.006333333333333333,"frozenset({'JBL C200 Bass Earphones', 'Samsung Galaxy A52 Smartphone', 'Amazfit Bip U Pro Smartwatch', 'Mi Fast Charger 20W'})"
+0.006,"frozenset({'JBL C200 Bass Earphones', 'Xiaomi Redmi Note 11 Smartphone', 'Amazfit Bip U Pro Smartwatch', 'Mi Fast Charger 20W'})"
+0.007,"frozenset({'JBL C200 Bass Earphones', 'Samsung Galaxy A52 Smartphone', 'Xiaomi Redmi Note 11 Smartphone', 'Amazfit Bip U Pro Smartwatch'})"
+0.005,"frozenset({'Lenovo Tab M10 Tablet', 'Samsung Galaxy A52 Smartphone', 'Amazfit Bip U Pro Smartwatch', 'Mi Fast Charger 20W'})"
+0.005666666666666667,"frozenset({'Lenovo Tab M10 Tablet', 'Xiaomi Redmi Note 11 Smartphone', 'Amazfit Bip U Pro Smartwatch', 'Mi Fast Charger 20W'})"
+0.0055,"frozenset({'Lenovo Tab M10 Tablet', 'Samsung Galaxy A52 Smartphone', 'Xiaomi Redmi Note 11 Smartphone', 'Amazfit Bip U Pro Smartwatch'})"
+0.006833333333333334,"frozenset({'Samsung Galaxy A52 Smartphone', 'Xiaomi Redmi Note 11 Smartphone', 'Amazfit Bip U Pro Smartwatch', 'Mi Fast Charger 20W'})"
+0.007,"frozenset({'Anker PowerCore 10K Powerbank', 'JBL C200 Bass Earphones', 'Boat Stone 200 Bluetooth Speaker', 'Dell Inspiron 3501 Laptop'})"
+0.005333333333333333,"frozenset({'Anker PowerCore 10K Powerbank', 'Samsung Galaxy A52 Smartphone', 'Boat Stone 200 Bluetooth Speaker', 'Dell Inspiron 3501 Laptop'})"
+0.006,"frozenset({'Anker PowerCore 10K Powerbank', 'Xiaomi Redmi Note 11 Smartphone', 'Boat Stone 200 Bluetooth Speaker', 'Dell Inspiron 3501 Laptop'})"
+0.0065,"frozenset({'Anker PowerCore 10K Powerbank', 'JBL C200 Bass Earphones', 'Boat Stone 200 Bluetooth Speaker', 'HP Pavilion 15 Laptop'})"
+0.005833333333333334,"frozenset({'Anker PowerCore 10K Powerbank', 'Lenovo Tab M10 Tablet', 'Boat Stone 200 Bluetooth Speaker', 'HP Pavilion 15 Laptop'})"
+0.006,"frozenset({'Anker PowerCore 10K Powerbank', 'Mi Fast Charger 20W', 'Boat Stone 200 Bluetooth Speaker', 'HP Pavilion 15 Laptop'})"
+0.0065,"frozenset({'Anker PowerCore 10K Powerbank', 'Samsung Galaxy A52 Smartphone', 'Boat Stone 200 Bluetooth Speaker', 'HP Pavilion 15 Laptop'})"
+0.005333333333333333,"frozenset({'Anker PowerCore 10K Powerbank', 'Xiaomi Redmi Note 11 Smartphone', 'Boat Stone 200 Bluetooth Speaker', 'HP Pavilion 15 Laptop'})"
+0.006666666666666667,"frozenset({'Anker PowerCore 10K Powerbank', 'Lenovo Tab M10 Tablet', 'JBL C200 Bass Earphones', 'Boat Stone 200 Bluetooth Speaker'})"
+0.005166666666666667,"frozenset({'Anker PowerCore 10K Powerbank', 'JBL C200 Bass Earphones', 'Boat Stone 200 Bluetooth Speaker', 'Mi Fast Charger 20W'})"
+0.005666666666666667,"frozenset({'Anker PowerCore 10K Powerbank', 'Samsung Galaxy A52 Smartphone', 'JBL C200 Bass Earphones', 'Boat Stone 200 Bluetooth Speaker'})"
+0.005666666666666667,"frozenset({'Anker PowerCore 10K Powerbank', 'Xiaomi Redmi Note 11 Smartphone', 'JBL C200 Bass Earphones', 'Boat Stone 200 Bluetooth Speaker'})"
+0.0065,"frozenset({'Anker PowerCore 10K Powerbank', 'Samsung Galaxy A52 Smartphone', 'Boat Stone 200 Bluetooth Speaker', 'Lenovo Tab M10 Tablet'})"
+0.005166666666666667,"frozenset({'Anker PowerCore 10K Powerbank', 'Lenovo Tab M10 Tablet', 'Xiaomi Redmi Note 11 Smartphone', 'Boat Stone 200 Bluetooth Speaker'})"
+0.005,"frozenset({'Anker PowerCore 10K Powerbank', 'Samsung Galaxy A52 Smartphone', 'Boat Stone 200 Bluetooth Speaker', 'Mi Fast Charger 20W'})"
+0.005666666666666667,"frozenset({'Anker PowerCore 10K Powerbank', 'Xiaomi Redmi Note 11 Smartphone', 'Boat Stone 200 Bluetooth Speaker', 'Mi Fast Charger 20W'})"
+0.005333333333333333,"frozenset({'Anker PowerCore 10K Powerbank', 'Samsung Galaxy A52 Smartphone', 'Xiaomi Redmi Note 11 Smartphone', 'Boat Stone 200 Bluetooth Speaker'})"
+0.005666666666666667,"frozenset({'Anker PowerCore 10K Powerbank', 'JBL C200 Bass Earphones', 'HP Pavilion 15 Laptop', 'Dell Inspiron 3501 Laptop'})"
+0.005833333333333334,"frozenset({'Anker PowerCore 10K Powerbank', 'Xiaomi Redmi Note 11 Smartphone', 'HP Pavilion 15 Laptop', 'Dell Inspiron 3501 Laptop'})"
+0.006833333333333334,"frozenset({'Anker PowerCore 10K Powerbank', 'Lenovo Tab M10 Tablet', 'JBL C200 Bass Earphones', 'Dell Inspiron 3501 Laptop'})"
+0.006,"frozenset({'Anker PowerCore 10K Powerbank', 'JBL C200 Bass Earphones', 'Mi Fast Charger 20W', 'Dell Inspiron 3501 Laptop'})"
+0.006166666666666667,"frozenset({'Anker PowerCore 10K Powerbank', 'Samsung Galaxy A52 Smartphone', 'JBL C200 Bass Earphones', 'Dell Inspiron 3501 Laptop'})"
+0.006166666666666667,"frozenset({'Anker PowerCore 10K Powerbank', 'Xiaomi Redmi Note 11 Smartphone', 'JBL C200 Bass Earphones', 'Dell Inspiron 3501 Laptop'})"
+0.005333333333333333,"frozenset({'Anker PowerCore 10K Powerbank', 'Xiaomi Redmi Note 11 Smartphone', 'Mi Fast Charger 20W', 'Dell Inspiron 3501 Laptop'})"
+0.008,"frozenset({'Anker PowerCore 10K Powerbank', 'Lenovo Tab M10 Tablet', 'JBL C200 Bass Earphones', 'HP Pavilion 15 Laptop'})"
+0.007,"frozenset({'Anker PowerCore 10K Powerbank', 'JBL C200 Bass Earphones', 'HP Pavilion 15 Laptop', 'Mi Fast Charger 20W'})"
+0.005833333333333334,"frozenset({'Anker PowerCore 10K Powerbank', 'Samsung Galaxy A52 Smartphone', 'JBL C200 Bass Earphones', 'HP Pavilion 15 Laptop'})"
+0.005,"frozenset({'Anker PowerCore 10K Powerbank', 'Lenovo Tab M10 Tablet', 'HP Pavilion 15 Laptop', 'Mi Fast Charger 20W'})"
+0.005,"frozenset({'Anker PowerCore 10K Powerbank', 'Samsung Galaxy A52 Smartphone', 'HP Pavilion 15 Laptop', 'Mi Fast Charger 20W'})"
+0.005,"frozenset({'Anker PowerCore 10K Powerbank', 'Xiaomi Redmi Note 11 Smartphone', 'HP Pavilion 15 Laptop', 'Mi Fast Charger 20W'})"
+0.007666666666666666,"frozenset({'Anker PowerCore 10K Powerbank', 'Lenovo Tab M10 Tablet', 'JBL C200 Bass Earphones', 'Mi Fast Charger 20W'})"
+0.006333333333333333,"frozenset({'Anker PowerCore 10K Powerbank', 'Samsung Galaxy A52 Smartphone', 'JBL C200 Bass Earphones', 'Lenovo Tab M10 Tablet'})"
+0.006,"frozenset({'Anker PowerCore 10K Powerbank', 'Lenovo Tab M10 Tablet', 'Xiaomi Redmi Note 11 Smartphone', 'JBL C200 Bass Earphones'})"
+0.007,"frozenset({'Anker PowerCore 10K Powerbank', 'Xiaomi Redmi Note 11 Smartphone', 'JBL C200 Bass Earphones', 'Mi Fast Charger 20W'})"
+0.0055,"frozenset({'Anker PowerCore 10K Powerbank', 'Samsung Galaxy A52 Smartphone', 'Xiaomi Redmi Note 11 Smartphone', 'JBL C200 Bass Earphones'})"
+0.0055,"frozenset({'JBL C200 Bass Earphones', 'Boat Stone 200 Bluetooth Speaker', 'HP Pavilion 15 Laptop', 'Dell Inspiron 3501 Laptop'})"
+0.005166666666666667,"frozenset({'Lenovo Tab M10 Tablet', 'Boat Stone 200 Bluetooth Speaker', 'HP Pavilion 15 Laptop', 'Dell Inspiron 3501 Laptop'})"
+0.0065,"frozenset({'Mi Fast Charger 20W', 'Boat Stone 200 Bluetooth Speaker', 'HP Pavilion 15 Laptop', 'Dell Inspiron 3501 Laptop'})"
+0.005,"frozenset({'JBL C200 Bass Earphones', 'Samsung Galaxy A52 Smartphone', 'Boat Stone 200 Bluetooth Speaker', 'Dell Inspiron 3501 Laptop'})"
+0.005333333333333333,"frozenset({'JBL C200 Bass Earphones', 'Xiaomi Redmi Note 11 Smartphone', 'Boat Stone 200 Bluetooth Speaker', 'Dell Inspiron 3501 Laptop'})"
+0.005,"frozenset({'Lenovo Tab M10 Tablet', 'Samsung Galaxy A52 Smartphone', 'Boat Stone 200 Bluetooth Speaker', 'Dell Inspiron 3501 Laptop'})"
+0.0055,"frozenset({'Samsung Galaxy A52 Smartphone', 'Boat Stone 200 Bluetooth Speaker', 'Mi Fast Charger 20W', 'Dell Inspiron 3501 Laptop'})"
+0.005833333333333334,"frozenset({'Xiaomi Redmi Note 11 Smartphone', 'Boat Stone 200 Bluetooth Speaker', 'Mi Fast Charger 20W', 'Dell Inspiron 3501 Laptop'})"
+0.006166666666666667,"frozenset({'Samsung Galaxy A52 Smartphone', 'Xiaomi Redmi Note 11 Smartphone', 'Boat Stone 200 Bluetooth Speaker', 'Dell Inspiron 3501 Laptop'})"
+0.007166666666666667,"frozenset({'JBL C200 Bass Earphones', 'Lenovo Tab M10 Tablet', 'Boat Stone 200 Bluetooth Speaker', 'HP Pavilion 15 Laptop'})"
+0.005666666666666667,"frozenset({'JBL C200 Bass Earphones', 'Mi Fast Charger 20W', 'Boat Stone 200 Bluetooth Speaker', 'HP Pavilion 15 Laptop'})"
+0.005666666666666667,"frozenset({'JBL C200 Bass Earphones', 'Samsung Galaxy A52 Smartphone', 'Boat Stone 200 Bluetooth Speaker', 'HP Pavilion 15 Laptop'})"
+0.005666666666666667,"frozenset({'JBL C200 Bass Earphones', 'Xiaomi Redmi Note 11 Smartphone', 'Boat Stone 200 Bluetooth Speaker', 'HP Pavilion 15 Laptop'})"
+0.005833333333333334,"frozenset({'Lenovo Tab M10 Tablet', 'Mi Fast Charger 20W', 'Boat Stone 200 Bluetooth Speaker', 'HP Pavilion 15 Laptop'})"
+0.005,"frozenset({'Lenovo Tab M10 Tablet', 'Samsung Galaxy A52 Smartphone', 'Boat Stone 200 Bluetooth Speaker', 'HP Pavilion 15 Laptop'})"
+0.005833333333333334,"frozenset({'Lenovo Tab M10 Tablet', 'Xiaomi Redmi Note 11 Smartphone', 'Boat Stone 200 Bluetooth Speaker', 'HP Pavilion 15 Laptop'})"
+0.006,"frozenset({'Samsung Galaxy A52 Smartphone', 'Mi Fast Charger 20W', 'Boat Stone 200 Bluetooth Speaker', 'HP Pavilion 15 Laptop'})"
+0.006833333333333334,"frozenset({'Mi Fast Charger 20W', 'Xiaomi Redmi Note 11 Smartphone', 'Boat Stone 200 Bluetooth Speaker', 'HP Pavilion 15 Laptop'})"
+0.0055,"frozenset({'Samsung Galaxy A52 Smartphone', 'Xiaomi Redmi Note 11 Smartphone', 'Boat Stone 200 Bluetooth Speaker', 'HP Pavilion 15 Laptop'})"
+0.006166666666666667,"frozenset({'JBL C200 Bass Earphones', 'Samsung Galaxy A52 Smartphone', 'Boat Stone 200 Bluetooth Speaker', 'Lenovo Tab M10 Tablet'})"
+0.006666666666666667,"frozenset({'JBL C200 Bass Earphones', 'Lenovo Tab M10 Tablet', 'Xiaomi Redmi Note 11 Smartphone', 'Boat Stone 200 Bluetooth Speaker'})"
+0.005,"frozenset({'JBL C200 Bass Earphones', 'Samsung Galaxy A52 Smartphone', 'Boat Stone 200 Bluetooth Speaker', 'Mi Fast Charger 20W'})"
+0.005333333333333333,"frozenset({'JBL C200 Bass Earphones', 'Xiaomi Redmi Note 11 Smartphone', 'Boat Stone 200 Bluetooth Speaker', 'Mi Fast Charger 20W'})"
+0.005333333333333333,"frozenset({'JBL C200 Bass Earphones', 'Samsung Galaxy A52 Smartphone', 'Xiaomi Redmi Note 11 Smartphone', 'Boat Stone 200 Bluetooth Speaker'})"
+0.005,"frozenset({'Lenovo Tab M10 Tablet', 'Samsung Galaxy A52 Smartphone', 'Boat Stone 200 Bluetooth Speaker', 'Mi Fast Charger 20W'})"
+0.005,"frozenset({'Lenovo Tab M10 Tablet', 'Xiaomi Redmi Note 11 Smartphone', 'Boat Stone 200 Bluetooth Speaker', 'Mi Fast Charger 20W'})"
+0.0055,"frozenset({'Lenovo Tab M10 Tablet', 'Samsung Galaxy A52 Smartphone', 'Xiaomi Redmi Note 11 Smartphone', 'Boat Stone 200 Bluetooth Speaker'})"
+0.006333333333333333,"frozenset({'Samsung Galaxy A52 Smartphone', 'Xiaomi Redmi Note 11 Smartphone', 'Boat Stone 200 Bluetooth Speaker', 'Mi Fast Charger 20W'})"
+0.005666666666666667,"frozenset({'JBL C200 Bass Earphones', 'Lenovo Tab M10 Tablet', 'HP Pavilion 15 Laptop', 'Dell Inspiron 3501 Laptop'})"
+0.006666666666666667,"frozenset({'JBL C200 Bass Earphones', 'HP Pavilion 15 Laptop', 'Mi Fast Charger 20W', 'Dell Inspiron 3501 Laptop'})"
+0.0065,"frozenset({'Lenovo Tab M10 Tablet', 'HP Pavilion 15 Laptop', 'Mi Fast Charger 20W', 'Dell Inspiron 3501 Laptop'})"
+0.007,"frozenset({'Lenovo Tab M10 Tablet', 'Xiaomi Redmi Note 11 Smartphone', 'HP Pavilion 15 Laptop', 'Dell Inspiron 3501 Laptop'})"
+0.006166666666666667,"frozenset({'Samsung Galaxy A52 Smartphone', 'HP Pavilion 15 Laptop', 'Mi Fast Charger 20W', 'Dell Inspiron 3501 Laptop'})"
+0.0055,"frozenset({'Xiaomi Redmi Note 11 Smartphone', 'HP Pavilion 15 Laptop', 'Mi Fast Charger 20W', 'Dell Inspiron 3501 Laptop'})"
+0.0065,"frozenset({'JBL C200 Bass Earphones', 'Lenovo Tab M10 Tablet', 'Mi Fast Charger 20W', 'Dell Inspiron 3501 Laptop'})"
+0.005833333333333334,"frozenset({'JBL C200 Bass Earphones', 'Lenovo Tab M10 Tablet', 'Xiaomi Redmi Note 11 Smartphone', 'Dell Inspiron 3501 Laptop'})"
+0.0055,"frozenset({'JBL C200 Bass Earphones', 'Samsung Galaxy A52 Smartphone', 'Mi Fast Charger 20W', 'Dell Inspiron 3501 Laptop'})"
+0.005833333333333334,"frozenset({'JBL C200 Bass Earphones', 'Samsung Galaxy A52 Smartphone', 'Xiaomi Redmi Note 11 Smartphone', 'Dell Inspiron 3501 Laptop'})"
+0.006833333333333334,"frozenset({'Lenovo Tab M10 Tablet', 'Samsung Galaxy A52 Smartphone', 'Mi Fast Charger 20W', 'Dell Inspiron 3501 Laptop'})"
+0.005,"frozenset({'Lenovo Tab M10 Tablet', 'Xiaomi Redmi Note 11 Smartphone', 'Mi Fast Charger 20W', 'Dell Inspiron 3501 Laptop'})"
+0.005666666666666667,"frozenset({'Lenovo Tab M10 Tablet', 'Samsung Galaxy A52 Smartphone', 'Xiaomi Redmi Note 11 Smartphone', 'Dell Inspiron 3501 Laptop'})"
+0.005833333333333334,"frozenset({'Samsung Galaxy A52 Smartphone', 'Xiaomi Redmi Note 11 Smartphone', 'Mi Fast Charger 20W', 'Dell Inspiron 3501 Laptop'})"
+0.006666666666666667,"frozenset({'JBL C200 Bass Earphones', 'Lenovo Tab M10 Tablet', 'HP Pavilion 15 Laptop', 'Mi Fast Charger 20W'})"
+0.0055,"frozenset({'JBL C200 Bass Earphones', 'Samsung Galaxy A52 Smartphone', 'HP Pavilion 15 Laptop', 'Lenovo Tab M10 Tablet'})"
+0.006333333333333333,"frozenset({'JBL C200 Bass Earphones', 'Lenovo Tab M10 Tablet', 'Xiaomi Redmi Note 11 Smartphone', 'HP Pavilion 15 Laptop'})"
+0.006333333333333333,"frozenset({'JBL C200 Bass Earphones', 'Samsung Galaxy A52 Smartphone', 'HP Pavilion 15 Laptop', 'Mi Fast Charger 20W'})"
+0.007166666666666667,"frozenset({'JBL C200 Bass Earphones', 'Xiaomi Redmi Note 11 Smartphone', 'HP Pavilion 15 Laptop', 'Mi Fast Charger 20W'})"
+0.006166666666666667,"frozenset({'JBL C200 Bass Earphones', 'Samsung Galaxy A52 Smartphone', 'Xiaomi Redmi Note 11 Smartphone', 'HP Pavilion 15 Laptop'})"
+0.006166666666666667,"frozenset({'Lenovo Tab M10 Tablet', 'Xiaomi Redmi Note 11 Smartphone', 'HP Pavilion 15 Laptop', 'Mi Fast Charger 20W'})"
+0.007333333333333333,"frozenset({'Samsung Galaxy A52 Smartphone', 'Xiaomi Redmi Note 11 Smartphone', 'HP Pavilion 15 Laptop', 'Mi Fast Charger 20W'})"
+0.006333333333333333,"frozenset({'JBL C200 Bass Earphones', 'Samsung Galaxy A52 Smartphone', 'Mi Fast Charger 20W', 'Lenovo Tab M10 Tablet'})"
+0.005666666666666667,"frozenset({'JBL C200 Bass Earphones', 'Lenovo Tab M10 Tablet', 'Xiaomi Redmi Note 11 Smartphone', 'Mi Fast Charger 20W'})"
+0.005166666666666667,"frozenset({'JBL C200 Bass Earphones', 'Samsung Galaxy A52 Smartphone', 'Xiaomi Redmi Note 11 Smartphone', 'Lenovo Tab M10 Tablet'})"
+0.006833333333333334,"frozenset({'JBL C200 Bass Earphones', 'Samsung Galaxy A52 Smartphone', 'Xiaomi Redmi Note 11 Smartphone', 'Mi Fast Charger 20W'})"
+0.006166666666666667,"frozenset({'Lenovo Tab M10 Tablet', 'Samsung Galaxy A52 Smartphone', 'Xiaomi Redmi Note 11 Smartphone', 'Mi Fast Charger 20W'})"

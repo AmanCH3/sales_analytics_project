@@ -1,6 +1,6 @@
 {
   "model": "LightGBM",
-  "timestamp": "2025-11-14T14:38:22.657557",
+  "timestamp": "2025-11-14T16:06:12.010027",
   "train_metrics": {
     "model": "LightGBM (Train)",
     "MAE": 547670.9792840289,

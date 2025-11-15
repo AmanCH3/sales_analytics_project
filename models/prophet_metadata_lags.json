@@ -1,0 +1,25 @@
+{
+  "model": "Prophet with Lags",
+  "timestamp": "2025-11-14T15:59:08.295798",
+  "test_metrics": {
+    "MAE": 3410923.22483553,
+    "RMSE": 4121029.394880194,
+    "R2": -2.9584695536093304,
+    "MAPE": 57.70761673955168
+  },
+  "regressors": [
+    "rainfall_mm",
+    "temperature",
+    "discount_percent",
+    "customer_traffic",
+    "festival_season",
+    "y_lag_1",
+    "y_lag_7",
+    "y_lag_14",
+    "y_roll_7",
+    "y_roll_14"
+  ],
+  "train_size": 292,
+  "test_size": 74,
+  "forecast_days": 90
+}

@@ -114,7 +114,7 @@ def train_prophet_model(train_df, df_regressors, test_df=None):
         weekly_seasonality=True,
         daily_seasonality=False,
         seasonality_mode='multiplicative',  # Better for data with trends
-        changepoint_prior_scale=0.05,  # Control flexibility (0.05 is default)
+        changepoint_prior_scale=0.3,  # Control flexibility (0.05 is default)
         seasonality_prior_scale=10.0,  # Control seasonality strength
         interval_width=0.95  # 95% confidence intervals
     )
@@ -151,7 +151,7 @@ def train_prophet_model(train_df, df_regressors, test_df=None):
 # ---------------------------------------------
 # Prophet Cross-Validation
 # ---------------------------------------------
-def perform_cross_validation(model, df_prophet, df_regressors):
+# def perform_cross_validation(model, df_prophet, df_regressors):
     """Perform time-series cross-validation"""
     print("\nPerforming cross-validation...")
     
@@ -166,7 +166,7 @@ def perform_cross_validation(model, df_prophet, df_regressors):
             weekly_seasonality=True,
             daily_seasonality=False,
             seasonality_mode='multiplicative',
-            changepoint_prior_scale=0.05
+            changepoint_prior_scale=0.05 ,
         )
         m_cv.add_seasonality(name='monthly', period=30.5, fourier_order=5)
         for col in regressor_cols:
@@ -204,7 +204,59 @@ def perform_cross_validation(model, df_prophet, df_regressors):
     except Exception as e:
         print(f"⚠️  Cross-validation failed: {e}")
         return None
-
+def perform_cross_validation(model, df_prophet, df_regressors):
+    """Perform time-series cross-validation"""
+    print("\nPerforming cross-validation...")
+    
+    try:
+        # [FIX] REMOVED this problematic merge:
+        # df_full = df_prophet.merge(df_regressors, on="ds", how="left")
+        
+        # We still need df_regressors to get the column names
+        regressor_cols = [col for col in df_regressors.columns if col != "ds"]
+        
+        # Retrain on full data for CV
+        m_cv = Prophet(
+            yearly_seasonality=True,
+            weekly_seasonality=True,
+            daily_seasonality=False,
+            seasonality_mode='multiplicative',
+            changepoint_prior_scale=0.05
+        )
+        m_cv.add_seasonality(name='monthly', period=30.5, fourier_order=5)
+        for col in regressor_cols:
+            m_cv.add_regressor(col)
+        
+        # [FIX] Fit directly on df_prophet, which has the correct columns
+        m_cv.fit(df_prophet) 
+        
+        # Cross-validation
+        df_cv = cross_validation(
+            m_cv,
+            initial='180 days',
+            period='30 days',
+            horizon='60 days'
+        )
+        
+        # Calculate metrics
+        df_metrics = performance_metrics(df_cv)
+        
+        print("\nCross-Validation Results:")
+        print(f"  Average MAE:  {df_metrics['mae'].mean():,.2f} NPR")
+        print(f"  Average RMSE: {df_metrics['rmse'].mean():,.2f} NPR")
+        print(f"  Average MAPE: {df_metrics['mape'].mean():.4f}")
+        
+        cv_metrics = {
+            "cv_mae_mean": float(df_metrics['mae'].mean()),
+            "cv_rmse_mean": float(df_metrics['rmse'].mean()),
+            "cv_mape_mean": float(df_metrics['mape'].mean())
+        }
+        
+        return cv_metrics
+    
+    except Exception as e:
+        print(f"⚠️  Cross-validation failed: {e}")
+        return None
 # ---------------------------------------------
 # Generate Future Forecast
 # ---------------------------------------------
@@ -301,7 +353,7 @@ def run(test_size=0.2, perform_cv=True):
         weekly_seasonality=True,
         daily_seasonality=False,
         seasonality_mode='multiplicative',
-        changepoint_prior_scale=0.05
+        changepoint_prior_scale=0.5
     )
     m_prod.add_seasonality(name='monthly', period=30.5, fourier_order=5)
     for col in regressor_cols:
@@ -361,4 +413,4 @@ def run(test_size=0.2, perform_cv=True):
 
 if __name__ == "__main__":
     # Set perform_cv=False to skip cross-validation (faster)
-    model, metrics, forecast = run(test_size=0.2, perform_cv=True)
+    model, metrics, forecast = run(test_size=0.5, perform_cv=True)

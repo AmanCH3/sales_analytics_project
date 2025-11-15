@@ -1,0 +1,20 @@
+{
+  "model": "Prophet Stable",
+  "timestamp": "2025-11-14T15:56:18.407119",
+  "test_metrics": {
+    "MAE": 1688001.0160796114,
+    "RMSE": 2130449.6015361687,
+    "R2": -0.057933608530334135,
+    "MAPE": 27.866708630313898
+  },
+  "regressors": [
+    "rainfall_mm",
+    "temperature",
+    "discount_percent",
+    "customer_traffic",
+    "festival_season"
+  ],
+  "train_size": 292,
+  "test_size": 74,
+  "forecast_days": 90
+}
