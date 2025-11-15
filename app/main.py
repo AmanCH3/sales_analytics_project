@@ -31,9 +31,10 @@ ENSEMBLE_METADATA = Path("models/ensemble_metadata.json")
 
 MODEL_COMPARISON = Path("data/processed/model_comparison.csv")
 
-# Product recommendation paths
-RECOMMENDATION_CSV = Path("data/processed/product_recommendations.csv")
-PLACEMENT_CSV = Path("data/processed/placement_suggestions.csv")
+# Product recommendation paths - UPDATED PATHS
+RECOMMENDATION_CSV = Path("data/processed/product_category_recommendations.csv")
+PLACEMENT_CSV = Path("data/processed/rack_aisle_suggestions.csv")
+CATEGORY_SUMMARY_CSV = Path("data/processed/category_summary.csv")
 
 FORECAST_DAYS = 90
 
@@ -63,15 +64,44 @@ def load_rules():
 
 @st.cache_data
 def load_product_recommendations():
+    """Load product-level recommendations with category info"""
     if RECOMMENDATION_CSV.exists():
         return pd.read_csv(RECOMMENDATION_CSV)
     return pd.DataFrame()
 
 @st.cache_data
 def load_placement_suggestions():
+    """Load placement suggestions"""
     if PLACEMENT_CSV.exists():
         return pd.read_csv(PLACEMENT_CSV)
     return pd.DataFrame()
+
+@st.cache_data
+def load_category_summary():
+    """Load category-to-category summary"""
+    if CATEGORY_SUMMARY_CSV.exists():
+        return pd.read_csv(CATEGORY_SUMMARY_CSV)
+    return pd.DataFrame()
+
+@st.cache_data
+def build_hierarchical_data(product_reco_df):
+    """Build hierarchical dict: category_pair -> product recommendations"""
+    if len(product_reco_df) == 0:
+        return {}
+    
+    hierarchical = {}
+    
+    # Group by category pairs
+    for (cat_from, cat_to), group in product_reco_df.groupby(['product_category', 'recommended_category']):
+        key = f"{cat_from} → {cat_to}"
+        hierarchical[key] = group.sort_values('lift', ascending=False).rename(columns={
+            'product': 'product_from',
+            'recommended_product': 'product_to',
+            'product_category': 'category_from',
+            'recommended_category': 'category_to'
+        })
+    
+    return hierarchical
 
 @st.cache_data
 def load_forecast(model_type="Prophet"):
@@ -113,9 +143,13 @@ def main():
     df = load_data()
     rules = load_rules()
 
-    # NEW: Load product recommendation datasets
+    # Load all product recommendation datasets
     reco_df = load_product_recommendations()
     placement_df = load_placement_suggestions()
+    category_summary = load_category_summary()
+    
+    # Build hierarchical structure
+    hierarchical_data = build_hierarchical_data(reco_df)
 
     # Sidebar
     st.sidebar.title("Dashboard Filters")
@@ -160,10 +194,15 @@ def main():
     with tab2:
         render_comparison_tab(load_comparison, load_metadata)
 
-    # TAB 3
+    # TAB 3 - FIXED: Pass all required parameters
     with tab3:
-        # FIXED: pass rules + reco_df + placement_df
-        render_product_tab(rules, reco_df, placement_df)
+        render_product_tab(
+            rules_df=rules,
+            reco_df=reco_df,
+            placement_df=placement_df,
+            category_recs=category_summary,
+            hierarchical_data=hierarchical_data
+        )
 
     # TAB 4
     with tab4:
