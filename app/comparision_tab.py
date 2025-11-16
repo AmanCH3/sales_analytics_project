@@ -23,7 +23,7 @@ def render_comparison_tab(load_comparison, load_metadata):
                 subset=['MAE', 'RMSE', 'MAPE'],
                 color='lightgreen'
             ),
-            use_container_width=True,
+            width="stretch",
             hide_index=True
         )
         
@@ -44,7 +44,7 @@ def render_comparison_tab(load_comparison, load_metadata):
                 color_continuous_scale='RdYlGn_r'
             )
             fig_mae.update_layout(showlegend=False)
-            st.plotly_chart(fig_mae, use_container_width=True)
+            st.plotly_chart(fig_mae, width="stretch")
         
         with col2:
             fig_mape = px.bar(
@@ -56,7 +56,7 @@ def render_comparison_tab(load_comparison, load_metadata):
                 color_continuous_scale='RdYlGn_r'
             )
             fig_mape.update_layout(showlegend=False)
-            st.plotly_chart(fig_mape, use_container_width=True)
+            st.plotly_chart(fig_mape, width="stretch")
         
         # Feature importance comparison
         st.markdown("---")
@@ -73,7 +73,7 @@ def render_comparison_tab(load_comparison, load_metadata):
                     for k, v in xgb_meta['top_10_features'].items()
                 ])
                 fig = px.bar(feat_df, x='Importance', y='Feature', orientation='h')
-                st.plotly_chart(fig, use_container_width=True)
+                st.plotly_chart(fig, width="stretch")
         
         with col2:
             lgbm_meta = load_metadata("LightGBM")
@@ -84,7 +84,7 @@ def render_comparison_tab(load_comparison, load_metadata):
                     for k, v in lgbm_meta['top_10_features'].items()
                 ])
                 fig = px.bar(feat_df, x='Importance', y='Feature', orientation='h')
-                st.plotly_chart(fig, use_container_width=True)
+                st.plotly_chart(fig, width="stretch")
         
     else:
         st.warning("⚠ No comparison data found. Run `src/ensemble_model.py` to generate model comparison.")

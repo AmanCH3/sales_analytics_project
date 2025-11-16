@@ -9,6 +9,7 @@ from forecast_tab import render_forecast_tab
 from comparision_tab import render_comparison_tab
 from product_tab import render_product_tab
 from explorer_tab import render_explorer_tab
+from notebook_tab import render_notebook_tab
 
 # ---------------------------------------------
 # Paths
@@ -208,11 +209,12 @@ def main():
     """)
 
     # Tabs
-    tab1, tab2, tab3, tab4 = st.tabs([
+    tab1, tab2, tab3, tab4, tab5 = st.tabs([
         "📈 Sales Forecasting",
         "📊 Model Comparison",
         "🛒 Product Associations",
-        "📂 Data Explorer & KPIs"
+        "📂 Data Explorer & KPIs",
+        "📊 Data Analysis Diagrams"
     ])
 
     # TAB 1
@@ -247,6 +249,10 @@ def main():
     # TAB 4
     with tab4:
         render_explorer_tab(df_filtered, selected_product)
+
+    # TAB 5
+    with tab5:
+        render_notebook_tab(df)
 
 # ---------------------------------------------
 if __name__ == "__main__":
